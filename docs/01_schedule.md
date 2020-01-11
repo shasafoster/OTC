@@ -69,9 +69,9 @@ If ```day_roll``` is set to ```31``` and the month is February,
 ## payment_type
 Specifies whether the payment occurs at the start or end of the period
 
-If the payment occurs at the beginning of the period, specify ```In Advance"```
+If the payment occurs at the beginning of the period, specify ```payment_type="In Advance"```
 
-If the payment occurs at the end of the period, specify ```"In Arrears"```
+If the payment occurs at the end of the period, specify ```payment_type="In Arrears"```
 
 ## payment_offset
 Specifies the business day offset from the period end, if the ```payment_type="In Arrears"```, or the period start, if the ```payment_type="In Advance"``` before the payment is made. ```payment_offset``` can take any integer value (both positive and negative values). A positive value for ```payment_offset``` indicates a later payment (a delay), while a negative number indicates an earlier payment. 
