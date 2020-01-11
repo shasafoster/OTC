@@ -67,8 +67,10 @@ The choice of the date rolling rule is conventional. Conventional rules used in 
 If ```day_roll``` is set to ```31``` and the month is February, 
 
 ## payment_type
-Specifies whether the payment occurs at the start or end of the period\n
-If the payment occurs at the beginning of the period, specify ```In Advance"```\n
+Specifies whether the payment occurs at the start or end of the period
+
+If the payment occurs at the beginning of the period, specify ```In Advance"```
+
 If the payment occurs at the end of the period, specify ```"In Arrears"```
 
 ## payment_offset
