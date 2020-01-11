@@ -21,11 +21,14 @@ schedule = OTC.schedule(effective_date="10Jan2020",
 ```
 
 
-The **effective date** specifies the contractual effective date of the derivative 
-The **termination date** specifies the contract termination date of the derivative 
-The **frequency** specifies the occurrence of 
+The ```effective_date``` specifies the contractual effective date of the derivative 
 
-## holidays
+The  ```termination_date``` specifies the contract termination date of the derivative 
+
+## frequency
+The **frequency** specifies the occurrence of period
+
+## business_days 
 
 Derivative contracts are signed between two parties. 
 The 
