@@ -46,7 +46,7 @@ To observe these business days set ```business_days="Sun Mon Tue Wed Thu"```.
 
 Date rolling occurs when a payment day or date used to calculate accrued interest falls on a non-business day or holiday. In this case the date is moved forward or backward in time such that it falls on a business day, according with the same business calendar.
 
-The choice of the date rolling rule is conventional. Conventional rules used in finance are:
+Day roll conventions available include:
 -   ```Actual``` : paid on the actual day, even if it is a non-business day.
 -   ```Following``` : the payment date is rolled to the next business day.
 -   ```Modified Following``` : the payment date is rolled to the next business day, unless doing so would cause the payment to be in the next calendar month, in which case the payment date is rolled to the previous business day. 
