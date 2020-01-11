@@ -34,7 +34,7 @@ The ```frequency``` specifies the occurrence of period.
 Valid values include ```"Weekly"```,```"Monthly"```,```"Quarterly"```,```"Semi-Annual"```,```"Annual"``` and ```"Zerocoupon"```
 A ```"Zerocoupon"``` leg of a swap has only a single payment at maturity (no interim payments). 
 
---
+---
 
 The ```business_days``` parameter sets the business days of the week.
 The majority of countries observe the Monday-Friday as business days, with Saturday-Sunday as the weekend. Hence for the majority of the time use ```business_days="Mon Tue Wed Thu Fri"```.
