@@ -37,11 +37,11 @@ The list of parameters to define a schedule is as follows
 
 
 The ```effective_date``` specifies the contractual effective date of the swap 
-
+---
 The  ```termination_date``` specifies the contract termination date of the swap. 
-
+---
 ### frequency
-The ```frequency``` specifies the occurrence of cperiod.
+The ```frequency``` specifies the occurrence of period.
 Valid values include ```"Weekly"```,```"Monthly"```,```"Quarterly"```,```"Semi-Annual"```,```"Annual"``` and ```"Zerocoupon"```
 A ```"Zerocoupon"``` leg of a swap has only a single payment at maturity (no interim payments). 
 
