@@ -1,4 +1,4 @@
-# Derivative contract schedules
+# Swap schedules
 
 Swaps are over the counter (OTC) derivative contracts and are highly customisable with period, payment and fixing schedules depending on several parameters. These parameters can define the exact dates of the derivatives contractual payments, or for calculating the accrued interest amounts. 
 
@@ -53,7 +53,7 @@ Israel and Muslim countries and  observe Sunday–Thursday as business days, wit
 To observe these business days set ```business_days="Sun Mon Tue Wed Thu"```. 
 
 ### day_roll_convention
-**date rolling** occurs when a payment day or date used to calculate accrued interest falls on the holiday calendar. In this case the date is moved forward or backward in time such that it falls on a business day, according with the same business calendar
+Date rolling occurs when a payment day or date used to calculate accrued interest falls on a non-business day or holiday. In this case the date is moved forward or backward in time such that it falls on a business day, according with the same business calendar.
 
 The choice of the date rolling rule is conventional. Conventional rules used in finance are:
 -   ```Actual``` : paid on the actual day, even if it is a non-business day.
@@ -82,5 +82,14 @@ Specifies the business day offset from the period end (or the period start), if 
 
 ## stubs
 
+Stubs occur when the contractual coupon periods of the swap do not divide exactly into into the swaps lifespan.
 
+For example, for a swap effective from 10-Jan-2020, and terminating on 10-Feb-2020, with a semi-annual frequency, the lifespan is 10 years and one month which is not exactly divisable by the semi-annual frequency. This results in a non-regular period known as a **stub period**.
+
+When stub's occur, we must define where the stub period falls. The stub period can occur in the first or last period of the swap. 
+We must also define if the stub period is longer or shorter than a regular period. 
+
+For example, for a swap effective from 10-Jan-2020, and terminating on 10-Feb-2020, with a semi-annual frequency, the stub could be either 1-month or 7-months long and could be the first or the last period of the swap. 
+
+If the stub period is 
 
