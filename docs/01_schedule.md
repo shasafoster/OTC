@@ -3,9 +3,9 @@
 Over the counter (OTC) derivative contracts are highly customisable and can have period, payment and fixing schedules depending on several parameters. These parameters define the exact payment date of the derivatives contractual payments.
 
 
-The ****effective date**** specifies the contractual effective date of the derivative 
-The ****termination date**** specifies the contract termination date of the derivative 
-The ****frequency**** specifies the occurrence of 
+The **effective date** specifies the contractual effective date of the derivative 
+The **termination date** specifies the contract termination date of the derivative 
+The **frequency** specifies the occurrence of 
 
 ## holiday calendar
 
