@@ -35,10 +35,14 @@ The list of parameters to define a schedule is as follows
 * [last_stub](#last_stub)
 * [last_period_start_date](#last_period_start_date)
 
+---
 
 The ```effective_date``` specifies the contractual effective date of the swap 
+
 ---
+
 The  ```termination_date``` specifies the contract termination date of the swap. 
+
 ---
 ### frequency
 The ```frequency``` specifies the occurrence of period.
