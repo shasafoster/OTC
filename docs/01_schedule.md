@@ -63,7 +63,7 @@ The choice of the date rolling rule is conventional. Conventional rules used in 
 -   ```Modified Previous```: the payment date is rolled to the previous business day, unless doing so would cause the payment to be in the previous calendar month, in which case the payment date is rolled to the next business day. Many institutions have month-end accounting procedures that necessitate this.
 
 ## day_roll
-```day_roll``` specifies the payment day of month. Valid values include 1,2,3,...,29,30,31,"EndOfMonth". "EndOfMonth" specifies that payment date is to occur on the last day of the month (e.g 30 June, 31 July, 28 February in a normal year, 29 February in a leap year).
+```day_roll``` specifies the payment day of month. Valid values include ```1,2,3,...,29,30,31,"EndOfMonth"```. ```"EndOfMonth"``` specifies that payment date is to occur on the last day of the month (e.g 30 June, 31 July, 28 February in a normal year, 29 February in a leap year).
 If ```day_roll``` is set to ```31``` and the month is February, 
 
 ## payment_type
