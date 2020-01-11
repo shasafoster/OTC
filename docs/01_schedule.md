@@ -21,6 +21,20 @@ schedule = OTC.schedule(effective_date="10Jan2020",
                         last_period_start_date=None)              
 ```
 
+The list of parameters to define a schedule is as follows
+* [effective_date](#effective_date)
+* [termination_date](#termination_date)
+* [frequency](#frequency)
+* [business_days](#business_days)
+* [day_roll_convention](#day_roll_convention)
+* [day_roll](#day_roll)
+* [payment type](payment_type)
+* [payment offset](payment_offset)
+* [first_stub](#first_stub)
+* [first_period_end_date](#first_period_end_date)
+* [last_stub](#last_stub)
+* [last_period_start_date](#last_period_start_date)
+
 
 The ```effective_date``` specifies the contractual effective date of the swap 
 
@@ -48,7 +62,7 @@ The choice of the date rolling rule is conventional. Conventional rules used in 
 -   ```Previous```: the payment date is rolled to the previous business day.
 -   ```Modified Previous```: the payment date is rolled to the previous business day, unless doing so would cause the payment to be in the previous calendar month, in which case the payment date is rolled to the next business day. Many institutions have month-end accounting procedures that necessitate this.
 
-# day_roll
+## day_roll
 ```day_roll``` specifies the payment day of month. Valid values include 1,2,3,...,29,30,31,"EndOfMonth". "EndOfMonth" specifies that payment date is to occur on the last day of the month (e.g 30 June, 31 July, 28 February in a normal year, 29 February in a leap year).
 If ```day_roll``` is set to ```31``` and the month is February, 
 
@@ -62,13 +76,5 @@ Specifies the business day offset from the period end, if the ```payment_type="I
 
 # stubs
 
-The list of parameters to define a schedule is as follows
-* [effective date](#effective-date)
-* [termination date](#termination-date)
-* [frequency](#payment-frequency)
-* [holiday calendar](#holiday-calendar)
-* [day roll](#day-roll)
-* [stub periods](#stub-periods)
-* [payment type](payment-type)
-* [payment delay](payment-delay)
+
 
