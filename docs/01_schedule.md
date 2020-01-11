@@ -47,7 +47,7 @@ A ```"Zerocoupon"``` leg of a swap has only a single payment at maturity (no int
 
 ### business_days 
 The ```business_days``` paremeter sets the business days of the week.
-The majority of countries observe the Monday-Friday as business days, with Saturday-Sunday as the weekend. Hence for the majority of the time use ```business_days="Mon Tue Wed Thu Fri"``` or ignore the parameters as ```"Mon Tue Wed Thu Fri"``` is the default value. 
+The majority of countries observe the Monday-Friday as business days, with Saturday-Sunday as the weekend. Hence for the majority of the time use ```business_days="Mon Tue Wed Thu Fri"```.
 
 Israel and Muslim countries and  observe Sunday–Thursday as business days, with Friday-Saturday as the weekend. 
 To observe these business days set ```business_days="Sun Mon Tue Wed Thu"```. 
@@ -86,8 +86,16 @@ Stubs occur when the contractual coupon periods of the swap do not divide exactl
 
 For example, for a swap effective from 10-Jan-2020, and terminating on 10-Feb-2020, with a semi-annual frequency, the lifespan is 10 years and one month which is not exactly divisable by the semi-annual frequency. This results in a non-regular period known as a **stub period**.
 
-When stub's occur, we must define where the stub period falls. The stub period can occur in the first or last period of the swap. 
-We must also define if the stub period is longer or shorter than a regular period. 
+If a swap has a stub, we should define where the stub period falls. The stub period can occur in the first or last period of the swap and can be longer or shorter than a regular period. 
+
+### first_stub
+
+### first_period_end_date
+
+### last_stub
+
+### last_period_start_date
+
 
 For example, for a swap effective from 10-Jan-2020, and terminating on 10-Feb-2020, with a semi-annual frequency, the stub could be either 1-month or 7-months long and could be the first or the last period of the swap. 
 
