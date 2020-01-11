@@ -6,8 +6,8 @@ Below is a call to the ```OTC.schedule()``` function.
 We will run through each of the function parameters, explain their meaning and acceptable input values.
 
 ```python
-schedule = OTC.schedule(effective_date="10Jan2020",
-                        termination_date="10Feb2030",
+schedule = OTC.schedule(start_date="10Jan2020",
+                        end_date="10Feb2030",
                         frequency="Semi-Annual"
                         business_days="Mon Tue Wed Thu Fri"
                         payment_holiday=["NY","LON"],
@@ -22,16 +22,22 @@ schedule = OTC.schedule(effective_date="10Jan2020",
 ```
 ---
 
-The ```effective_date``` specifies the contractual effective date of the swap 
+The ```start_date``` specifies the contractual effective date of the swap 
 
 ---
 
-The  ```termination_date``` specifies the contract termination date of the swap. 
+The  ```end_date``` specifies the contractual termination date of the swap. 
 
 ---
 
-The ```frequency``` specifies the occurrence of period.
-Valid values include ```"Weekly"```,```"Monthly"```,```"Quarterly"```,```"Semi-Annual"```,```"Annual"``` and ```"Zerocoupon"```
+The ```frequency``` specifies the occurrence of period. Valid values include:
+* ```"Weekly"```
+* ```"Monthly"```
+* ```"Quarterly"```
+* ```"Semi-Annual"```
+* ```"Annual"```
+* ```"Zerocoupon"```
+
 A ```"Zerocoupon"``` leg of a swap has only a single payment at maturity (no interim payments). 
 
 ---
