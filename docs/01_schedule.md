@@ -3,8 +3,19 @@
 Over the counter (OTC) derivative contracts are highly customisable and can have period, payment and fixing schedules depending on several parameters. These parameters define the exact payment date of the derivatives contractual payments.
 
 ```python
-schedule = OTC.schedule(effective_date='10Jan2020',
-                        termination_date='10Jan2030')
+schedule = OTC.schedule(effective_date="10Jan2020",
+                        termination_date="10Feb2030",
+                        frequency="Semi-Annual"
+                        business_days="Mon Tue Wed Thu Fri"
+                        payment_holiday=["NY","LON"],
+                        day_roll="Modified Following",
+                        payment_type="In Arrears"
+                        first_stub=None,
+                        first_period_end_date = None,
+                        last_stub="Long",
+                        last_period_start_date=None
+                        
+                        
 ```
 
 
@@ -12,10 +23,9 @@ The **effective date** specifies the contractual effective date of the derivativ
 The **termination date** specifies the contract termination date of the derivative 
 The **frequency** specifies the occurrence of 
 
-## holiday calendar
+## holidays
 
-OTC derivative contracts usually specify 
-
+Derivative contracts are signed between two parties. 
 The 
 
 ## day roll
