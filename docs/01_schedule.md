@@ -27,6 +27,7 @@ The  ```termination_date``` specifies the contract termination date of the swap.
 
 ## frequency
 The ```frequency``` specifies the occurrence of cperiod.
+
 Valid values include ```"Weekly"```,```"Monthly"```,```"Quarterly"```,```"Semi-Annual"```,```"Annual"``` and ```"Zerocoupon"```
 
 ## business_days 
