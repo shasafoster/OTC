@@ -27,13 +27,15 @@ The  ```termination_date``` specifies the contract termination date of the swap.
 
 ## frequency
 The ```frequency``` specifies the occurrence of cperiod.
-
 Valid values include ```"Weekly"```,```"Monthly"```,```"Quarterly"```,```"Semi-Annual"```,```"Annual"``` and ```"Zerocoupon"```
+A ```"Zerocoupon"``` leg of a swap has only a single payment at maturity (no interim payments). 
 
 ## business_days 
+The ```business_days``` paremeter sets the business days of the week.
+The majority of countries observe the Monday-Friday as business days, with Saturday-Sunday as the weekend. Hence for the majority of the time use ```business_days="Mon Tue Wed Thu Fri"``` or ignore the parameters as ```"Mon Tue Wed Thu Fri"``` is the default value. 
 
-Derivative contracts are signed between two parties. 
-The 
+However Israel and Muslim countries and  observe Sunday–Thursday as business days, with Friday-Saturday as the weekend. 
+To observe these business days set ```business_days="Sun Mon Tue Wed Thu"```. 
 
 ## day roll
 **date rolling** occurs when a payment day or date used to calculate accrued interest falls on the holiday calendar. In this case the date is moved forward or backward in time such that it falls on a business day, according with the same business calendar
