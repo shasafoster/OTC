@@ -1,6 +1,6 @@
 # Derivative contract schedules
 
-Over the counter (OTC) derivative contracts are highly customisable and can have period, payment and fixing schedules depending on several parameters. These parameters define the exact payment date of the derivatives contractual payments.
+Swaps are over the counter (OTC) derivative contracts and are highly customisable with period, payment and fixing schedules depending on several parameters. These parameters can define the exact dates of the derivatives contractual payments, or for calculating the accrued interest amounts. 
 
 Below is a call to the ```OTC.schedule()``` function.
 We will run through each of the function parameters, explain their meaning and acceptable input values.
@@ -21,12 +21,13 @@ schedule = OTC.schedule(effective_date="10Jan2020",
 ```
 
 
-The ```effective_date``` specifies the contractual effective date of the derivative 
+The ```effective_date``` specifies the contractual effective date of the swap 
 
-The  ```termination_date``` specifies the contract termination date of the derivative 
+The  ```termination_date``` specifies the contract termination date of the swap. 
 
 ## frequency
-The **frequency** specifies the occurrence of period
+The ```frequency``` specifies the occurrence of cperiod.
+Valid values include ```"Weekly"```,```"Monthly"```,```"Quarterly"```,```"Semi-Annual"```,```"Annual"``` and ```"Zerocoupon"```
 
 ## business_days 
 
