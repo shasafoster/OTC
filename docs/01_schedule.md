@@ -40,19 +40,19 @@ The ```effective_date``` specifies the contractual effective date of the swap
 
 The  ```termination_date``` specifies the contract termination date of the swap. 
 
-## frequency
+### frequency
 The ```frequency``` specifies the occurrence of cperiod.
 Valid values include ```"Weekly"```,```"Monthly"```,```"Quarterly"```,```"Semi-Annual"```,```"Annual"``` and ```"Zerocoupon"```
 A ```"Zerocoupon"``` leg of a swap has only a single payment at maturity (no interim payments). 
 
-## business_days 
+### business_days 
 The ```business_days``` paremeter sets the business days of the week.
 The majority of countries observe the Monday-Friday as business days, with Saturday-Sunday as the weekend. Hence for the majority of the time use ```business_days="Mon Tue Wed Thu Fri"``` or ignore the parameters as ```"Mon Tue Wed Thu Fri"``` is the default value. 
 
 Israel and Muslim countries and  observe Sunday–Thursday as business days, with Friday-Saturday as the weekend. 
 To observe these business days set ```business_days="Sun Mon Tue Wed Thu"```. 
 
-## day_roll_convention
+### day_roll_convention
 **date rolling** occurs when a payment day or date used to calculate accrued interest falls on the holiday calendar. In this case the date is moved forward or backward in time such that it falls on a business day, according with the same business calendar
 
 The choice of the date rolling rule is conventional. Conventional rules used in finance are:
@@ -62,25 +62,25 @@ The choice of the date rolling rule is conventional. Conventional rules used in 
 -   ```Previous```: the payment date is rolled to the previous business day.
 -   ```Modified Previous```: the payment date is rolled to the previous business day, unless doing so would cause the payment to be in the previous calendar month, in which case the payment date is rolled to the next business day. Many institutions have month-end accounting procedures that necessitate this.
 
-## day_roll
+### day_roll
 ```day_roll``` specifies the payment day of month. Valid values include ```1,2,3,...,29,30,31,"EndOfMonth"```. 
 
 ```day_roll="EndOfMonth"``` specifies that payment date is to occur on the last day of the month.
 
 
-## payment_type
+### payment_type
 Specifies whether the payment occurs at the start or end of the period
 
 If the payment occurs at the beginning of the period, specify ```payment_type="In Advance"```
 
 If the payment occurs at the end of the period, specify ```payment_type="In Arrears"```
 
-## payment_offset
+### payment_offset
 Specifies the business day offset from the period end (or the period start), if ```payment_type="In Arrears"```, (if ```payment_type="In Advance"```) before the payment is made. 
 
 ```payment_offset``` can take any integer value (both positive and negative values). A positive value for ```payment_offset``` indicates a later payment (a delay), while a negative number indicates an earlier payment. 
 
-# stubs
+## stubs
 
 
 
