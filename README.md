@@ -2,4 +2,4 @@
 
 If you need help, file a Github issue: https://github.com/shasafoster/OTC/issues/new
 
-Read the docs at https://shasafoster.github.io/OTC/docs/01_schedule
+
