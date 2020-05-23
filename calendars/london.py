@@ -3,7 +3,7 @@
 from pandas import DateOffset, Timestamp
 from pandas.tseries.holiday import Holiday, MO, previous_friday, weekend_to_monday
 from pandas.tseries.holiday import EasterMonday, GoodFriday
-from common_holidays import MONDAY, TUESDAY
+from calendars.common_holidays import MONDAY, TUESDAY
 
 # New Year's Eve
 LSENewYearsEve = Holiday(
@@ -90,7 +90,7 @@ BankHoliday = [Timestamp('2012-06-04', tz='UTC')]
 QueensJubilee = [Timestamp('2012-06-05', tz='UTC')]
 
 
-def LON_holidays():
+def holidays():
     return [LSENewYearsDay,
             GoodFriday,
             EasterMonday,

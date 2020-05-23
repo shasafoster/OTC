@@ -18,7 +18,7 @@ from datetime import time
 from pandas.tseries.holiday import Holiday, GoodFriday, EasterMonday
 from pytz import timezone
 
-from common_holidays import (
+from calendars.common_holidays import (
     new_years_day,
     epiphany,
     european_labour_day,
@@ -49,7 +49,7 @@ BoxingDay = boxing_day()
 NewYearsEve = new_years_eve()
 
 
-def HEL_holidays():
+def holidays():
     return [
         NewYearsDay,
         Epiphany,

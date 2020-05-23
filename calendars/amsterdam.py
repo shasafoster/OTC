@@ -18,7 +18,7 @@ from datetime import time
 from pandas.tseries.holiday import Holiday, GoodFriday, EasterMonday
 from pytz import timezone
 
-from common_holidays import (
+from calendars.common_holidays import (
     new_years_day,
     ascension_day,
     whit_monday,
@@ -56,7 +56,7 @@ NewYearsEveInOrAfter2002 = new_years_eve(
 
 
 
-def AMS_holidays():
+def holidays():
     return [
         NewYearsDay,
         GoodFriday,

@@ -16,14 +16,8 @@ from dateutil.relativedelta import (
 )
 from pandas.tseries.offsets import Day
 
-from .common_holidays import new_years_day
-from .trading_calendar import (
-    MONDAY,
-    TUESDAY,
-    WEDNESDAY,
-    THURSDAY,
-    FRIDAY,
-)
+from calendars.common_holidays import new_years_day,MONDAY,TUESDAY,WEDNESDAY,THURSDAY,FRIDAY
+
 
 
 def july_5th_holiday_observance(datetime_index):

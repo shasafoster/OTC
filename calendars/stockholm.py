@@ -11,7 +11,7 @@ from pandas.tseries.holiday import (
 from pandas.tseries.offsets import Day
 from pytz import timezone
 
-from common_holidays import (
+from calendars.common_holidays import (
     new_years_day,
     epiphany,
     maundy_thursday,
@@ -73,7 +73,7 @@ BoxingDay = boxing_day()
 NewYearsEve = new_years_eve()
 
 
-def  STO_holidays():
+def holidays():
     return [
         NewYearsDay,
         Epiphany,

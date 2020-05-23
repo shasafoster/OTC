@@ -4,7 +4,7 @@ import pandas as pd
 from pytz import timezone
 from pytz import UTC
 
-from xtks_holidays import (
+from calendars.xtks_holidays import (
     NewYearsHolidayDec31,
     NewYearsHolidayJan1,
     NewYearsHolidayJan2,
@@ -38,7 +38,7 @@ XTKS_START_DEFAULT = pd.Timestamp('2000-01-01', tz=UTC)
 
 
 
-def TKY_holidays():
+def holidays():
     return [
         NewYearsHolidayDec31,
         NewYearsHolidayJan1,

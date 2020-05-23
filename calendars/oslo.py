@@ -81,7 +81,7 @@ OSENewYearsEve = Holiday(
 )
 
 
-def OSL_holidays():
+def holidays():
     return [OSENewYearsDay,
         OSEMaundyThursday,
         OSEGoodFriday,

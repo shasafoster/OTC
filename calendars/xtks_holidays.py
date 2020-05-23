@@ -11,7 +11,7 @@ from pandas.tseries.holiday import (
     sunday_to_monday,
 )
 
-from common_holidays import new_years_day, SUNDAY, WEEKENDS
+from calendars.common_holidays import new_years_day, SUNDAY, WEEKENDS
 
 
 

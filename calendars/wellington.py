@@ -21,7 +21,7 @@ from pandas.tseries.holiday import (
 )
 from pytz import timezone
 
-from common_holidays import (
+from calendars.common_holidays import (
     new_years_day,
     anzac_day,
     christmas,
@@ -84,7 +84,7 @@ Christmas = christmas(observance=next_monday)
 
 BoxingDay = boxing_day(observance=next_monday_or_tuesday)
 
-def WEL_holidays():
+def holidays():
     return [
         NewYearsDay,
         DayAfterNewYearsDay,

@@ -9,10 +9,10 @@ from pandas.tseries.holiday import (
 )
 from pytz import timezone, UTC
 
-from common_holidays import new_years_day
+from calendars.common_holidays import new_years_day
 
 
-def JOH_holidays():
+def holidays():
     return [
         new_years_day(
             observance=sunday_to_monday,

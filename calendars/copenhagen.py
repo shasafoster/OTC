@@ -24,7 +24,7 @@ from pandas.tseries.holiday import (
 from pandas.tseries.offsets import Day
 from pytz import timezone
 
-from common_holidays import (
+from calendars.common_holidays import (
     new_years_day,
     maundy_thursday,
     ascension_day,
@@ -64,7 +64,7 @@ NewYearsEve = new_years_eve()
 
 
 
-def COP_holidays():
+def holidays():
     return [
         NewYearsDay,
         MaundyThursday,

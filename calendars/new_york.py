@@ -5,7 +5,7 @@ from pandas import (DateOffset, Timestamp, date_range)
 from pandas.tseries.holiday import (Holiday, nearest_workday, sunday_to_monday)
 from pandas.tseries.offsets import Day
 from pandas.tseries.holiday import GoodFriday, USLaborDay
-from common_holidays import (FRIDAY, MONDAY, THURSDAY, TUESDAY, WEDNESDAY)
+from calendars.common_holidays import (FRIDAY, MONDAY, THURSDAY, TUESDAY, WEDNESDAY)
 
 
 # These have the same definition, but are used in different places because the
@@ -188,7 +188,7 @@ Christmas = Holiday(
 )
 
 
-def NY_holidays():
+def holidays():
     return [USNewYearsDay,
             USMartinLutherKingJrAfter1998,
             USLincolnsBirthDayBefore1954,

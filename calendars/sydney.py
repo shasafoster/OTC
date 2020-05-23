@@ -16,7 +16,7 @@ from pandas.tseries.holiday import (
 from pytz import timezone
 from pytz import UTC
 
-from common_holidays import (
+from calendars.common_holidays import (
     new_years_day,
     anzac_day,
     christmas,
@@ -58,7 +58,7 @@ WeekendChristmas = weekend_christmas()
 BoxingDay = boxing_day()
 WeekendBoxingDay = weekend_boxing_day()
 
-def SYD_holidays():
+def holidays():
     return [NewYearsDay,
             AustraliaDay,
             GoodFriday,

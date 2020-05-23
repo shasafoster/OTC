@@ -6,7 +6,7 @@ from pandas.tseries.holiday import (
 )
 from pytz import timezone
 
-from common_holidays import (
+from calendars.common_holidays import (
     new_years_day,
     european_labour_day,
     ascension_day,
@@ -49,7 +49,7 @@ NewYearsEve = new_years_eve()
 
 
 
-def ZUR_holidays():
+def holidays():
     return [
         NewYearsDay,
         BerchtoldsDay,
